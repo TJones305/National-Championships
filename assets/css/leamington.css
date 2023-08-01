@@ -1,0 +1,444 @@
+body{
+    background-color: rgb(4, 4, 54);
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size:26px;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 90px;
+    text-shadow: 4px 4px rgb(4, 4, 54);
+    color: rgb(223, 233, 248);
+    background-color: rgba(239, 232, 149, 0.598);
+}
+
+h3{
+    color:rgb(160, 122, 27);
+    font-size: 36px;
+}
+
+#club{
+    background-image: url(/assets/media/ladies-leamington.jpeg) ;
+    background-position: center -130px;
+    border-radius: 5%;
+}
+
+.heading{
+    text-align: center;
+    font-family: 'Edu SA Beginner', cursive;
+    text-decoration: underline;
+}
+
+#flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgb(177, 212, 247);
+    color:rgb(4, 4, 54);
+    margin: 2.5%;
+    padding:2.5%;
+}
+
+.day{
+    width:13%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 1%;
+    text-decoration: underline;
+}
+
+.flex-item{
+    text-align: center;
+    width:13%;
+    margin:1% 0%;
+    font-size: 24px;
+    font-weight: 700;
+    border-top: rgb(134, 99, 11) 2px solid;
+}
+
+#flex p{
+    background-color:aliceblue;
+    border: solid 1px rgb(4, 4, 54);
+    border-radius: 5%;
+    text-shadow: 2px 2px rgb(235, 215, 167);
+}
+
+#flex p:hover{
+    color:aliceblue;
+    background-color: rgb(4, 4, 54);
+    border: solid 2px aliceblue;
+    border-radius: 5%;
+}
+
+.gx img{
+    height:30%;
+    display: block;
+    margin-left: 12.5%;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.header-flex img{
+    width:10%;
+}
+
+#entries{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    text-align: center;
+    border: 2px solid goldenrod;
+    gap:0px 2%;
+    margin: 1.5%;
+    padding:2.5% 2.5% 2.5% 1%;
+}
+
+#entries img{
+    width:25%;
+    border-radius: 50%;
+}
+
+.tom{
+    width:100%;
+    height: 17.5%;
+}
+
+.cross{
+    border-radius: 10% !important;
+    width:90% !important;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.grid-item{
+    margin: 2% 0%;
+    height: 500px;
+    background-color:rgb(4, 4, 61);
+    border:1px solid aliceblue;
+    border-radius:5%;
+    padding:2;
+}
+
+.grid-item:hover{
+    margin: 2% 0%;
+    height: 500px;
+    background-color: rgb(145, 197, 249);
+    color:rgb(4, 4, 61);
+    border:1px solid aliceblue;
+    border-radius:5%;
+    padding:2;
+}
+
+.bg-cross:hover{
+    background-color: rgb(4, 4, 61);
+}
+
+hr{
+    width:50%;
+    border-color: rgb(111, 177, 243);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Media Queries --- */
+
+/* --- Tablet Devices */
+@media (max-width:1200px) and (min-width:1023px){
+    body{
+        font-size: 22px;
+    }
+    h1{
+        font-size: 70px;
+    }
+
+    .header-flex img{
+        width: 15%;
+        height: 50%
+    }
+
+    /* Reduce GXimages */
+    .gx img{
+        height: 100px;
+        display: block;
+        margin-left: 12.5%;
+    }
+    /* Reduce Tom image */
+    .tom{
+        width:100%;
+        height: 10%;
+    }
+    /* Increase Cross image */
+    .cross{
+        border-radius: 10% !important;
+        width:90% !important;
+        height: 70%;
+        margin-top: 20%;
+        margin-right: 5%;
+    }
+    .grid-item{
+        margin: 2% 0%;
+        height: 450px;
+        background-color:rgb(4, 4, 61);
+        border:1px solid aliceblue;
+        border-radius:5%;
+        padding:2;
+    }
+}
+
+/* --- Tablet/Landscape Phone Devices */
+@media (max-width:897px) and (min-width:735px){
+    body{
+        font-size: 22px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2.heading {
+        font-size: 40px;
+    }
+
+    h3{
+        font-size:34px;
+    }
+
+    .header-flex img{
+        width: 10%;
+        height: 50%
+    }
+
+    /* Reduce GXimages */
+.gx img{
+    height: 100px;
+    display: block;
+    margin-left: 12.5%;
+}
+/* Reduce Tom image */
+.tom{
+    width:100%;
+    height: 10%;
+}
+/* Increase Cross image */
+.cross{
+    border-radius: 10% !important;
+    width:90% !important;
+    height: 70%;
+    margin-top: 20%;
+    margin-right: 5%;
+}
+/* Reduce Grid to 3 columns */
+#entries{
+    grid-template-columns: 32% 32% 32%;
+    margin:2%;
+    padding:2%;
+}
+/* Reduce Flex to 5 columns */
+.flex-item{
+    text-align: center;
+    width: 18%;
+    margin: 1% 0%;
+    font-size: 24px;
+    font-weight: 700;
+    border-top: rgb(134, 99, 11) 2px solid;
+}
+/* Turn off un-needed flex-items */
+.day{
+    display:none;
+}
+
+
+}
+
+
+/* ---- Large phones/ small tablets */
+@media (max-width:734px) and (min-width:425px){
+    body{
+        font-size: 22px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2.heading {
+        font-size: 40px;
+    }
+
+    h3{
+        font-size:34px;
+    }
+
+    .header-flex img{
+        width: 10%;
+        height: 50%
+    }
+
+    /* Reduce GXimages */
+.gx img{
+    height: 100px;
+    display: block;
+    margin-left: 12.5%;
+}
+/* Reduce Tom image */
+.tom{
+    width:100%;
+    height: 10%;
+}
+/* Increase Cross image */
+.cross{
+    border-radius: 10% !important;
+    width:90% !important;
+    height: 70%;
+    margin-top: 20%;
+    margin-right: 5%;
+}
+/* Reduce Grid to 3 columns */
+#entries{
+    grid-template-columns: 32% 32% 32%;
+    margin:2%;
+    padding:2%;
+}
+/* Reduce Flex to 5 columns */
+.flex-item{
+    text-align: center;
+    width: 18%;
+    margin: 1% 0%;
+    font-size: 24px;
+    font-weight: 700;
+    border-top: rgb(134, 99, 11) 2px solid;
+}
+/* Turn off un-needed flex-items */
+.day{
+    display:none;
+}
+.grid-item{
+    margin: 2% 0%;
+    height: 450px;
+    background-color:rgb(4, 4, 61);
+    border:1px solid aliceblue;
+    border-radius:5%;
+    padding:2;
+}
+}
+/* --- Mobile Devices */
+@media (max-width:415px){
+
+    body{
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2.heading {
+        font-size: 30px;
+    }
+
+    h3{
+        font-size:28px;
+    }
+
+    .header-flex img{
+        width: 10%;
+        height: 50%
+    }
+
+    #flex{
+        margin:2%;
+        padding:2%;
+    }
+
+    .flex-item{
+        text-align: center;
+        width: 32%;
+        margin: 1% 0%;
+        font-size: 24px;
+        font-weight: 700;
+        border-top: rgb(134, 99, 11) 2px solid;
+    }
+
+    .day{
+        display:none;
+    }
+
+    #spare1{
+        display: none;
+    }
+
+    #spare2{
+        display: none;
+    }
+
+    .gx img{
+        height: 50px;
+        display: block;
+        margin-left: 12.5%;
+    }
+
+    #entries{
+        grid-template-columns: 48% 48%;
+        margin:2%;
+        padding:2%;
+    }
+
+    .tom{
+        width:100%;
+        height: 10%;
+    }
+    
+    .cross{
+        border-radius: 10% !important;
+        width:90% !important;
+        height: 70%;
+        margin-top: 20%;
+        margin-right: 5%;
+    }
+    
+    .grid-item{
+        margin: 2% 0%;
+        height: 350px;
+        background-color:rgb(4, 4, 61);
+        border:1px solid aliceblue;
+        border-radius:5%;
+        padding:2;
+    }
+    
+    .grid-item:hover{
+        margin: 2% 0%;
+        height: 350px;
+        background-color: rgb(145, 197, 249);
+        color:rgb(4, 4, 61);
+        border:1px solid aliceblue;
+        border-radius:5%;
+        padding:2;
+    }
+    
+    .bg-cross:hover{
+        background-color: rgb(4, 4, 61);
+    }
+    
+    hr{
+        width:50%;
+        border-color: rgb(111, 177, 243);
+    }
+}
