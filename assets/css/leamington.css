@@ -12,6 +12,7 @@ h1{
     text-shadow: 4px 4px rgb(4, 4, 54);
     color: rgb(223, 233, 248);
     background-color: rgba(239, 232, 149, 0.598);
+    border-radius: 5%;
 }
 
 h3{
@@ -20,9 +21,10 @@ h3{
 }
 
 #club{
-    background-image: url('https://TJones305.github.io/National-Championships/assets/media/ladies-leamington.jpeg') ;
-    background-position: center -130px;
-    border-radius: 5%;
+    position: fixed;
+    width: 100%;
+    margin-top: 1%;
+    z-index:-1;
 }
 
 .heading{
@@ -83,7 +85,7 @@ h3{
 
 .header-flex{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 5%;
 }
 
