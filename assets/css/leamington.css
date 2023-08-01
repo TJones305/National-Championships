@@ -20,7 +20,7 @@ h3{
 }
 
 #club{
-    background-image: url(../assets/media/ladies-leamington.jpeg) ;
+    background-image: url('../assets/media/ladies-leamington.jpeg') ;
     background-position: center -130px;
     border-radius: 5%;
 }
