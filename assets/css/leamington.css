@@ -7,11 +7,12 @@ body{
 }
 
 h1{
+    display:inline;
     font-family: 'Sedgwick Ave', cursive;
     font-size: 90px;
     text-shadow: 4px 4px rgb(4, 4, 54);
     color: rgb(223, 233, 248);
-    background-color: rgba(239, 232, 149, 0.598);
+    background-color: rgba(113, 108, 54, 0.898);
     border-radius: 5%;
 }
 
@@ -86,7 +87,7 @@ h3{
 .header-flex{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin-bottom:5%;
 }
 
 .header-flex img{
